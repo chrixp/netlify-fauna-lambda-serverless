@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import logo from './logo.svg';
+import { useState } from 'react'
 import './App.css';
 
 function createTodo(data) {
@@ -10,11 +9,6 @@ function createTodo(data) {
       return response.json()
     })
 }
-
-const myTodo = {
-    title: 'My todo title',
-    completed: false,
-  }
   
 function App() {
   const [title, setTitle] = useState("")
